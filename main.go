@@ -3,8 +3,8 @@ package main
 import (
 	"gjs/materia"
 
-	"github.com/divan/three"
 	"github.com/gopherjs/gopherjs/js"
+	"github.com/soypat/three"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/divan/three"
+import "github.com/soypat/three"
 
 type rigidBody struct {
 	subBodies []*three.Euler

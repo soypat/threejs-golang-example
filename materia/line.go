@@ -1,7 +1,7 @@
 package materia
 
 import (
-	"github.com/divan/three"
+	"github.com/soypat/three"
 )
 
 // color can be specified like so:
