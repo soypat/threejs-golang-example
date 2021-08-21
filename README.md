@@ -10,4 +10,8 @@ Drop `index.html` in a browser window or open using browser.
     ```shell
     gopherjs build
     ```
+    | You can install `gopherjs` with the following command:|
+    |-------------------------------------------------------|
+    |      `go get -u github.com/gopherjs/gopherjs`         |
+
 3. Create my html page manually as [`index.html`](index.html)
