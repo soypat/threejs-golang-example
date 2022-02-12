@@ -4,7 +4,7 @@ import (
 	"gjs/materia"
 
 	"github.com/gopherjs/gopherjs/js"
-	"github.com/soypat/three"
+	three "github.com/soypat/gthree"
 )
 
 func main() {
@@ -90,7 +90,7 @@ var (
 
 func lineGeom(to, from *vec) *three.BasicGeometry {
 	geom := three.NewBasicGeometry(three.BasicGeometryParams{})
-	geom.AddVertice(to.x, to.y, to.z)
-	geom.AddVertice(from.x, from.y, from.z)
+	geom.AddVertex(to.x, to.y, to.z)
+	geom.AddVertex(from.x, from.y, from.z)
 	return &geom
 }

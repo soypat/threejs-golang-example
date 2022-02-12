@@ -1,6 +1,6 @@
 package main
 
-import "github.com/soypat/three"
+import three "github.com/soypat/gthree"
 
 type rigidBody struct {
 	subBodies []*three.Euler
@@ -12,10 +12,11 @@ func NewRigidBody(rotations ...*three.Euler) rigidBody {
 	}
 }
 
-func (r *rigidBody) rotate(x, y, z float64) {
+func (r *rigidBody) rotate(dx, dy, dz float64) {
 	for i := range r.subBodies {
-		r.subBodies[i].Set("x", r.subBodies[i].Get("x").Float()+x)
-		r.subBodies[i].Set("y", r.subBodies[i].Get("y").Float()+y)
-		r.subBodies[i].Set("z", r.subBodies[i].Get("z").Float()+z)
+		x := r.subBodies[i].Get("x").Float()
+		y := r.subBodies[i].Get("y").Float()
+		z := r.subBodies[i].Get("z").Float()
+		r.subBodies[i].Set(x+dx, y+dy, z+dz, "")
 	}
 }

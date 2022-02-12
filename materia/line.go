@@ -1,8 +1,6 @@
 package materia
 
-import (
-	"github.com/soypat/three"
-)
+import three "github.com/soypat/gthree"
 
 // color can be specified like so:
 // "rgb(255, 0, 0)"
